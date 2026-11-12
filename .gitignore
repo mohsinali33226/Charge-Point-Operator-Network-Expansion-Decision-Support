@@ -46,3 +46,6 @@ data/config/mer_verified_site_mapping.csv
 data/config/mer_source_location_site_mapping.csv
 # Local distributable/archive ZIPs
 *.zip
+*.pbix*
+audit_cpo_git_publication.py
+stage_cpo_first_commit.py
