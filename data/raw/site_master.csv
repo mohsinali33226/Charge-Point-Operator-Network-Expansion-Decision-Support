@@ -1,0 +1,6 @@
+site_id,city,latitude,longitude,site_type,charger_count, connectors_per_charger,connector_count,charger_power_kw,max_connector_power_kw,grid_capacity_kw,commissioning_date,state_code
+DE_NBG_001,Nuremberg,49.4521,11.0767,motorway,2,2,4,300,300,900,2025-01-15,BY
+DE_HAM_001,Hamburg,53.5511,9.9937,urban,4,2,8,150,150,1000,2024-08-01,HH
+DE_FRA_001,Frankfurt,50.1109,8.6821,motorway,6,2,12,300,300,2200,2024-02-20,HE
+DE_MUC_001,Munich,48.1351,11.5820,retail,4,2,8,300,300,1600,2024-05-10,BY
+DE_LEI_001,Leipzig,51.3397,12.3731,urban,2,2,4,150,150,600,2025-03-01,SN

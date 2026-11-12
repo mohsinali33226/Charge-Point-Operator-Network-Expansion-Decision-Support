@@ -1,0 +1,11 @@
+{
+  "eur_contribution_margin_per_extra_kwh": 0.2,
+  "eur_new_charger_equipment_and_installation": 90000,
+  "eur_fixed_site_expansion_works": 30000,
+  "eur_grid_upgrade_fixed": 50000,
+  "eur_grid_upgrade_per_added_kw": 150,
+  "eur_annual_maintenance_per_new_charger": 2000,
+  "eur_annual_extra_site_overhead": 1000,
+  "evaluation_years": 7,
+  "discount_rate": 0.08
+}

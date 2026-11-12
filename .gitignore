@@ -1,0 +1,48 @@
+# CPO local/runtime files — maintained by prepare_cpo_github_hygiene.py
+.venv/
+venv/
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.ipynb_checkpoints/
+.vscode/
+.idea/
+*.log
+.env
+.env.*
+!.env.example
+*~
+*.tmp
+*.bak
+~$*.pbix
+*.pbix.bak
+# Archived scripts / backup and audit workspaces (remain on local disk)
+_archive/
+_local_cleanup_backups/
+_cleanup_review/
+_cleanup_script_test/
+_decision_feed_test/
+_cpo_adapter_test/
+_end_to_end_audit_fixture/
+_technical_decision_fixture/
+_mer_import_fixture*.csv
+prepare_cpo_cleanup_bundle.py
+apply_cpo_cleanup.py
+prepare_cpo_github_hygiene.py
+# External source datasets: keep local and respect source licenses
+data/external/
+# Generated synthetic sessions, interim results, and real-data derivatives
+data/raw/charging_sessions.csv
+data/raw/demand_attempts.csv
+data/processed/
+# Operator-specific evidence and mapping material should be reviewed, not automatically published
+data/config/cpo_operator_evidence_intake.csv
+data/config/cpo_monthly_arrivals_verified.csv
+data/config/cpo_hourly_reporting_coverage.csv
+data/config/mer_verified_site_mapping.csv
+data/config/mer_source_location_site_mapping.csv
+# Local distributable/archive ZIPs
+*.zip

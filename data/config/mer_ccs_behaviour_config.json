@@ -1,0 +1,38 @@
+{
+  "calibration_status": "HISTORICAL_BEHAVIOUR_PROXY_NOT_2026_SITE_VALIDATION",
+  "source": "Mer_Dataset.csv -> mer_valid_sessions.csv",
+  "source_data_kind": "observed_successful_charging_sessions",
+  "charger_types": "Combo CCS only",
+  "observed_start_date": "2020-10-29 10:51:03",
+  "observed_end_date": "2024-02-21 23:11:36",
+  "sample_size": 59761,
+  "behaviour_pool_csv": "data/processed/mer_ccs_empirical_behaviour_pool.csv",
+  "observed_delivered_energy_kwh": {
+    "p10": 9.48,
+    "p50": 31.289,
+    "p90": 58.552,
+    "mean": 32.977
+  },
+  "observed_session_duration_min": {
+    "p10": 9.867,
+    "p50": 29.85,
+    "p90": 56.0,
+    "mean": 32.185
+  },
+  "observed_average_power_kw": {
+    "p10": 29.658,
+    "p50": 64.454,
+    "p90": 114.676,
+    "mean": 68.412
+  },
+  "sampling_rule": "sample complete rows to preserve energy-duration-power relationship",
+  "limitations": [
+    "Observed delivered energy is not a measured vehicle energy request.",
+    "Observed average power is not a measured vehicle maximum charging power.",
+    "This dataset contains served sessions, not all arrivals or rejected drivers.",
+    "Older operator/session sample is not representative of 2026 Germany by default.",
+    "Source filters may exclude many sessions; report selection bias.",
+    "Historical source location category is not a verified match to demo site IDs.",
+    "No existing synthetic data, simulation parameters or P50/P95 models have been overwritten."
+  ]
+}

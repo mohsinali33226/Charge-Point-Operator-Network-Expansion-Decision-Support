@@ -1,0 +1,47 @@
+{
+  "research_cutoff_date": "2026-10-24",
+  "market": "Germany_public_EV_charging",
+  "currency": "EUR",
+  "purpose": "Public evidence anchors only; do not substitute for operator-specific contracts or quotes",
+  "verified_public_benchmarks": {
+    "end_user_price_contract_gross_eur_per_kwh": {
+      "low": 0.45,
+      "high": 0.70,
+      "vat_included": true,
+      "interpretation": "UBA 2026 assessed offer range, not universal average or CPO net revenue",
+      "source": "https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/2026-06/P26_ZSA_3.Auflage.pdf"
+    },
+    "end_user_price_adhoc_gross_eur_per_kwh": {
+      "low": 0.58,
+      "high": 0.79,
+      "vat_included": true,
+      "interpretation": "UBA 2026 assessed offer range, not universal average or CPO contribution margin",
+      "source": "https://www.umweltbundesamt.de/system/files/medien/11850/publikationen/2026-06/P26_ZSA_3.Auflage.pdf"
+    }
+  },
+  "site_specific_inputs_required": {
+    "actual_cpo_net_sales_by_channel_eur_per_kwh": null,
+    "actual_electricity_procurement_and_grid_cost_eur_per_kwh": null,
+    "actual_demand_charge_eur_per_kw_year": null,
+    "actual_charger_hardware_and_installation_quote_eur": null,
+    "actual_grid_upgrade_dso_quote_eur": null,
+    "actual_land_and_lease_eur_year": null,
+    "actual_operations_and_maintenance_eur_year": null,
+    "actual_payment_roaming_and_fees_eur_per_kwh": null,
+    "verified_site_connection_power_kw": null,
+    "verified_charging_equipment_topology": null,
+    "location_specific_future_demand_scenario": null
+  },
+  "technical_reference_sources": {
+    "hardware_alpitronic": "https://www.alpitronic.it/en/hypercharger/hyc-400-series-2/",
+    "hardware_kempower": "https://kempower.com/solution/distributed-charging-systems/",
+    "dso_connection": "https://www.bdew.de/energie/vnb-anwendungshilfe-ii-netzanschluss-ladesaeulen-mittelspannung/",
+    "afir": "https://nationale-leitstelle.de/bestand-ausbau/afir/",
+    "metering": "https://nationale-leitstelle.de/aktuelles-service/newshub/orientierungshilfe-zum-mess-und-eichrecht-in-der-ladeinfrastruktur/",
+    "operator_demand_planning": "https://nationale-leitstelle.de/tools-analysen/toolbox/",
+    "ocpp": "https://openchargealliance.org/protocols/open-charge-point-protocol/",
+    "ocpi": "https://ocpi-protocol.com/"
+  },
+  "finance_readiness": "NOT_VALIDATED",
+  "rule": "Missing site-specific values may be explored as openly labeled sensitivity inputs, but may not be presented as verified financial conclusions"
+}

@@ -1,0 +1,6 @@
+site_id,grid_connection_id,modelled_site_import_limit_kw,verified_contract_import_limit_kw,verified_grid_connection_limit_kw,transformer_capacity_kva,other_site_load_kw,grid_voltage_level,distribution_grid_operator,grid_connection_reference,evidence_status,source_reference,source_date
+DE_NBG_001,DE_NBG_001__DEMO_GRID_01,900.0,,,,,,,,SYNTHETIC_DEMO_NOT_VERIFIED,data/raw/site_master.csv; original synthetic grid assumption,
+DE_HAM_001,DE_HAM_001__DEMO_GRID_01,1000.0,,,,,,,,SYNTHETIC_DEMO_NOT_VERIFIED,data/raw/site_master.csv; original synthetic grid assumption,
+DE_FRA_001,DE_FRA_001__DEMO_GRID_01,2200.0,,,,,,,,SYNTHETIC_DEMO_NOT_VERIFIED,data/raw/site_master.csv; original synthetic grid assumption,
+DE_MUC_001,DE_MUC_001__DEMO_GRID_01,1600.0,,,,,,,,SYNTHETIC_DEMO_NOT_VERIFIED,data/raw/site_master.csv; original synthetic grid assumption,
+DE_LEI_001,DE_LEI_001__DEMO_GRID_01,600.0,,,,,,,,SYNTHETIC_DEMO_NOT_VERIFIED,data/raw/site_master.csv; original synthetic grid assumption,

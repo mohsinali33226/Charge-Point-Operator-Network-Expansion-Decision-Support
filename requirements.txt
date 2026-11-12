@@ -1,0 +1,16 @@
+# Inferred from the project's Python imports (reviewed November 2026).
+# Compatible versions should be verified in a fresh virtual environment.
+# Python 3.11 or 3.12 is recommended for this project.
+
+# Core simulation, data preparation, and calculations
+numpy>=1.26,<3
+pandas>=2.2,<3
+
+# Forecasting and evaluation
+scikit-learn>=1.4,<2
+lightgbm>=4,<5
+
+# Optional pipeline components: visual diagnostics, regional holidays, DWD data
+matplotlib>=3.8,<4
+holidays>=0.50,<1
+wetterdienst==0.139.0

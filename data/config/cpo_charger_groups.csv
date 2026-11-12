@@ -1,0 +1,6 @@
+site_id,charger_group_id,charging_type,architecture,manufacturer,model,unit_count,connectors_per_unit,max_simultaneous_sessions_per_unit,rated_unit_output_kw,max_connector_output_kw,shared_power_pool_id,installation_date,evidence_status,source_reference,source_date
+DE_NBG_001,DE_NBG_001__DEMO_GROUP_01,DC,INTEGRATED,,,2,2,2,300.0,300.0,,,SYNTHETIC_DEMO_NOT_VERIFIED,data/raw/site_master.csv; original synthetic site configuration,
+DE_HAM_001,DE_HAM_001__DEMO_GROUP_01,DC,INTEGRATED,,,4,2,2,150.0,150.0,,,SYNTHETIC_DEMO_NOT_VERIFIED,data/raw/site_master.csv; original synthetic site configuration,
+DE_FRA_001,DE_FRA_001__DEMO_GROUP_01,DC,INTEGRATED,,,6,2,2,300.0,300.0,,,SYNTHETIC_DEMO_NOT_VERIFIED,data/raw/site_master.csv; original synthetic site configuration,
+DE_MUC_001,DE_MUC_001__DEMO_GROUP_01,DC,INTEGRATED,,,4,2,2,300.0,300.0,,,SYNTHETIC_DEMO_NOT_VERIFIED,data/raw/site_master.csv; original synthetic site configuration,
+DE_LEI_001,DE_LEI_001__DEMO_GROUP_01,DC,INTEGRATED,,,2,2,2,150.0,150.0,,,SYNTHETIC_DEMO_NOT_VERIFIED,data/raw/site_master.csv; original synthetic site configuration,
