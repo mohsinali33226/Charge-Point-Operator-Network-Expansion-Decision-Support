@@ -4,6 +4,28 @@
 
 > **Engineering demonstration — not an investment recommendation.** The five planning sites and their charging demand are simulated. Grid limits, equipment assumptions, demand-growth scenarios, and economic inputs are not independently verified for actual construction or investment. Historical German DC occupancy backtests are a **separate dataset** and do not validate the five simulated expansion sites.
 
+## Power BI Dashboard Preview
+
+The five-page dashboard demonstrates how a CPO can evaluate charging network expansion, grid constraints, financial feasibility, and data readiness.
+
+### 1. Network Overview
+![Network Overview](docs/dashboard/01_network_overview.png)
+
+### 2. Expansion Impact
+![Expansion Impact](docs/dashboard/02_expansion_impact.png)
+
+### 3. Grid Capacity & Feasibility
+![Grid Feasibility](docs/dashboard/03_grid_feasibility.png)
+
+### 4. Financial Analysis
+![Financial Analysis](docs/dashboard/04_financial_analysis.png)
+
+### 5. Data Validation & Decision Readiness
+![Data Validation](docs/dashboard/05_data_decision_readiness.png)
+
+> **Note:** Expansion results are based on synthetic scenarios. Historical German DC occupancy backtests are separate from the simulated investment cases.
+
+
 ## What does the project answer?
 
 For a charge point operator (CPO), adding charging units can improve service but might overload the grid or fail financially. This project demonstrates a structured screening process:
