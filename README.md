@@ -78,7 +78,18 @@ python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
 ```
 
-If your existing `.venv` already works, you **do not** need to recreate it. The dependency ranges in this file were inferred from code imports and should be tested on a clean machine before claiming full reproducibility.
+If your existing `.venv` already works, you **do not** need to recreate it. The declared packages were successfully installed and imported in a fresh Python 3.11 virtual environment; see the reproducibility checks below.
+
+## Reproducibility checks (verified November 2026)
+
+The **synthetic demonstration workflow** has passed two separate checks:
+
+- **Clean committed-snapshot pipeline check:** 13/13 synthetic steps completed in the existing working Python environment. The generated dashboard feed contained **10 rows**: five example sites under **0% and 15%** annual demand-growth assumptions.
+- **Fresh Python 3.11 environment check:** A new virtual environment installed `requirements.txt`, passed `pip check` and package import checks, generated **62,039** simulated vehicle arrivals (**61,386** served sessions), and created **11** equipment scenarios across five sites. All **7/7** checks passed.
+
+**Scope:** These checks establish that the core synthetic demo can be regenerated and its declared dependencies can be installed in a new environment. They **do not** establish that the full 13-step workflow was run from start to finish *inside that new environment*. The external German DC historical-data benchmark and the Power BI `.pbix` file were **not** independently reproduced by these tests. Licensed/external source datasets and machine-specific Power BI CSV paths may need to be supplied or adjusted locally.
+
+The checked synthetic pipeline starts directly with `generate_sessions.py`, then uses the *already committed* demo asset configuration files. Running `prepare_cpo_asset_registry.py` is **not required** for a fresh clone and may refuse to overwrite existing registry files. Use the tested script order in the next section.
 
 ## Running the synthetic planning pipeline
 
@@ -86,7 +97,6 @@ The following is the **intended script order** for the synthetic scenario and ev
 
 ```bat
 python src\generate_sessions.py
-python src\prepare_cpo_asset_registry.py
 python src\generate_network_scenarios.py
 python src\simulate_registry_network.py
 python src\simulate_growth_aware_network.py
@@ -101,7 +111,7 @@ python src\prepare_cpo_operator_evidence_intake.py
 python src\build_cpo_decision_dashboard_feed.py
 ```
 
-**Important:** The `--max-rejected-pct 2` value above is an example operator-selected *screening threshold*, not an industry standard. `--demo` intentionally uses fictional financial assumptions; it must never be interpreted as a financial estimate for real installations. This run sequence is a **documented workflow**, not yet certified as a clean-clone, one-command reproducibility test.
+**Important:** The `--max-rejected-pct 2` value above is an example operator-selected *screening threshold*, not an industry standard. `--demo` intentionally uses fictional financial assumptions; it must never be interpreted as a financial estimate for real installations. This run sequence passed a **13-step synthetic clean-snapshot test** using the existing Python environment; see the reproducibility checks above.
 
 The main Power BI input is:
 
@@ -158,5 +168,5 @@ This repository does not provide third-party raw datasets, confidential operator
 
 - Python pipeline and Power BI engineering demonstration developed.
 - Older experimental scripts archived locally; local archives, test fixtures, virtual environments, and processed data excluded from public Git.
-- **Not yet validated as a reproducible public release** on a new machine.
+- **Synthetic demonstration verified:** 13/13 steps passed in a clean committed snapshot; 7/7 fresh-environment checks passed. External real-data benchmarking and Power BI refresh still require separate validation.
 - Planned next step: a focused Streamlit application that makes scenario exploration interactive rather than merely replicating Power BI charts.
